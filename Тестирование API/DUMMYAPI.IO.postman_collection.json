@@ -1,0 +1,662 @@
+{
+	"info": {
+		"_postman_id": "2df86d43-ad78-4101-a9ae-425e6dae8109",
+		"name": "DUMMYAPI.IO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31565994"
+	},
+	"item": [
+		{
+			"name": "Действия с пользователем",
+			"item": [
+				{
+					"name": "Создание пользователя",
+					"item": [
+						{
+							"name": "Негативные тесты",
+							"item": [
+								{
+									"name": "Создание пользователя с пустым полем имя",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"female\",\r\n\"email\": \"fortestKSO@bk.ru\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с пустым полем Фамилия",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"\",\r\n\"gender\": \"female\",\r\n\"email\": \"fortestN7@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1995\",\r\n\"рhone\": \"+7(903)518-93-43\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с одним символом в поле имя",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"A\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"female\",\r\n\"email\": \"fortestTwo@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с одним символом в поле Фамилия",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"M\",\r\n\"gender\": \"female\",\r\n\"email\": \"testagain212@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1998\",\r\n\"рhone\": \"+7(903)522-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с 51 символом в поле Имя",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"sdfkdfsksdfksdfkfdskdsfkfdskfdskfkfdskfdskfdskfdsf\",\r\n\"lastName\": \"Mary\",\r\n\"gender\": \"female\",\r\n\"email\": \"TestN124@mail.ru\",\r\n\"dateOfBirth\": \"2/1/1995\",\r\n\"рhone\": \"+7(903)518-99-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с некорректно заполненным полем email",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"male\",\r\n\"email\": \"fofdsdgmail.com\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с занятой почтой",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"male\",\r\n\"email\": \"test1934421341@gmail.com\",\r\n\"dateOfBirth\": \"1/1/2000\",\r\n\"рhone\": \"+7(903)518-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с пустым полем email",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"mr\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"female\",\r\n\"email\": \"\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-44\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с 51 cимволом в поле Фамилия",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"sdfkdfsksdfksdfkfdskdsfkfdskfdskfkfdskfdskfdskfdsf\",\r\n\"gender\": \"female\",\r\n\"email\": \"TestN1243455@mail.ru\",\r\n\"dateOfBirth\": \"2/1/1995\",\r\n\"рhone\": \"+7(903)531-93-49\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Позитивные тесты",
+							"item": [
+								{
+									"name": "Создание пользователя",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"mr\",\r\n\"firstName\": \"Chalres\",\r\n\"lastName\": \"Sanson\",\r\n\"gender\": \"male\",\r\n\"email\": \"Vivelafrance@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-01\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с двумя символами в поле имя и фамилия",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"An\",\r\n\"lastName\": \"Ma\",\r\n\"gender\": \"female\",\r\n\"email\": \"fortestTwo1@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-02\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Создание пользователя с 50 символами в поле имя и фамилия",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-id",
+												"value": "656d108c1beeb91bf7860646",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"tile\": \"ms\",\r\n\"firstName\": \"sdfkdfsksdfksdfkfdskdsfkfdskfdskfkfdskfdskfdskfdsf\",\r\n\"lastName\": \"sdfkdfsksdfksdfkfdskdsfkfdskfdskfkfdskfdskfdskfdsf\",\r\n\"gender\": \"female\",\r\n\"email\": \"fortestTwo1@mail.ru\",\r\n\"dateOfBirth\": \"1/1/1992\",\r\n\"рhone\": \"+7(903)518-91-02\",\r\n\"picture\": \"http://myfpoto.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://dummyapi.io/data/v1/user/create",
+											"protocol": "https",
+											"host": [
+												"dummyapi",
+												"io"
+											],
+											"path": [
+												"data",
+												"v1",
+												"user",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Удаление пользователя",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "App-id",
+								"value": "656d108c1beeb91bf7860646",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65bf9c3cdf6ac681abdc72e5",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65bf9c3cdf6ac681abdc72e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Изменение данных в пользователе",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "App-id",
+								"value": "656d108c1beeb91bf7860646",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"firstName\": \"Charles-Anri\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65bf9c3cdf6ac681abdc72e5",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65bf9c3cdf6ac681abdc72e5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Поиск пользователя(-ей)",
+			"item": [
+				{
+					"name": "Поиск пользователя по ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "App-id",
+								"value": "656d108c1beeb91bf7860646",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65bf9c3cdf6ac681abdc72e5",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65bf9c3cdf6ac681abdc72e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Поиск удаленного пользователя по ID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Выдача списка пользователей",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+									"    .tftable tr {background-color:#ffffff;}",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+									"    .tftable tr:hover {background-color:#e0ffff;}",
+									"</style>",
+									"",
+									"<table class=\"tftable\" border=\"1\">",
+									"    <tr>",
+									"        <th>ID</th>",
+									"        <th>Title</th>",
+									"        <th>First Name</th>",
+									"        <th>Last Name</th>",
+									"        <th>Picture</th>",
+									"    </tr>",
+									"    ",
+									"    {{#each response.data}}",
+									"        <tr>",
+									"            <td>{{id}}</td>",
+									"            <td>{{title}}</td>",
+									"            <td>{{firstName}}</td>",
+									"            <td>{{lastName}}</td>",
+									"            <td><img src=\"{{picture}}\" alt=\"User Picture\" width=\"50\" height=\"50\"></td>",
+									"        </tr>",
+									"    {{/each}}",
+									"</table>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    return {response: pm.response.json()}",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "App-id",
+								"value": "656d108c1beeb91bf7860646",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user?page=1000&limit=10",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1000"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

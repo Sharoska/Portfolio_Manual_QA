@@ -1,10 +1,2 @@
 В данной папке находятся результаты тестирования REST API.
 Проект: https://dummyapi.io
-
-dateOfBirth": "1/1/1992
-
- +7(903)518-91-01
-
-"tile": "ms"
-
-https://dummyapi.io/data/v1/user/create
